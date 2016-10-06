@@ -7,4 +7,4 @@ Beep piano would use the beep command.
 
 Both pianos are interactable and are not hardcoded.
 
-Next update would be me, choosing which piano that i will create based on the difficulty.
+Next update would be me, choosing which piano that i will create based on the difficulty of each.
