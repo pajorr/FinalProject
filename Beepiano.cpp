@@ -1,7 +1,9 @@
 #include <iostream>
-#include <windows.h> // to freeze the console when needed using system("cls") and using windowsAPI to use beep and key input commands.
+#include <windows.h> // to clear the console when needed using system("cls") and using windowsAPI to use beep and key input commands.
 #include <conio.h>
 #include <cstdlib>
+#include <fstream>
+#include <string>
 
 // Main plan : To assign notes on keyboard keys, and using if to execute these notes. Notes will be played automatically when pressing the keys. (No need to press enter.)
 
@@ -12,35 +14,6 @@ int Piano();
 int Exit();
 int HardcodePicker();
 int Mario();
-
-string DisplayArt(ifstream& file)
-{
-	string Art = "";
-	if(file)
-	{
-		while (file.good())
-		{
-			string TempString;
-			getline(file, TempString);
-			TempString = "\n";
-			
-			Art += TempString;
-		}
-		return Art;
-	}
-	else
-	{
-		return "File not found";
-	}
-}
-
-int Startup()
-{
-	ifstream inputFile;
-	inputFile.open("L=logo.txt");
-	string StringArt;
-	StringArt = DisplayArt(inputFile);
-}
 
 int Interface()
 {
@@ -177,7 +150,7 @@ int Piano()
 			  {
               break;
               }      
-			  system("cls"); // freezes screen
+			  system("cls"); // constantly clears screen
 			  }			  			  
 	}
 	
@@ -317,7 +290,6 @@ int Mario()
 
 int main()
 {
-	Startup();
 	Interface();
 	Choice ();
 }
