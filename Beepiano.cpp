@@ -24,6 +24,21 @@ int Interface()
 	cout << "3. Exit." << endl;
 }
 
+int Logo()
+{
+	std::cout << R"(
+  ____                  _                   
+ |  _ \                (_)                  
+ | |_) | ___  ___ _ __  _  __ _ _ __   ___  
+ |  _ < / _ \/ _ \ '_ \| |/ _` | '_ \ / _ \ 
+ | |_) |  __/  __/ |_) | | (_| | | | | (_) |
+ |____/ \___|\___| .__/|_|\__,_|_| |_|\___/ 
+                 | |                        
+                 |_|                        )";
+                 
+  std::cout<<"\n"<<"\n";               
+}
+
 int Exit()
 {
 	exit;
@@ -155,6 +170,7 @@ int Piano()
 	}
 	
 	system("cls");
+	Logo();
 	Interface();
 	Choice ();
 }
@@ -283,6 +299,7 @@ int Mario()
  if(backout == 4);
  {
  	system("cls");
+ 	Logo();
  	Interface();
  	Choice();	
  }		
@@ -290,6 +307,7 @@ int Mario()
 
 int main()
 {
+	Logo();
 	Interface();
 	Choice ();
 }
