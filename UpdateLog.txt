@@ -1,0 +1,35 @@
+Welcome to Beepiano Update Log !
+
+Update 1.0 :
+
+- Basic coding
+- Main ideas in form of notes in the code
+
+Update 1.1 :
+
+- Added a .txt file that includes the beeps in chord of C
+
+NOTE : Update 2.0 Isn't visible on GIThub History due to mistake on Force Pushing.
+
+Update 2.0 :
+
+- Alpha working version of Beepiano
+- Currently only able to play chord of C without any interface
+
+Update 2.1 :
+
+- Code fix
+
+Update 3.0 :
+
+- Beepiano with Rebemol C and Proper Interface
+- Added Mario Theme song
+
+Update 3.1 :
+
+- Fixed some notes
+- Removed output logo from .txt function
+
+Update 3.5 ( LAST ) :
+
+-Fixed code, added Logo() function.
